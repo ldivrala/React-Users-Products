@@ -13,7 +13,7 @@ A simple React application to display and filter user and product data fetched f
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/ldivrala/React-Users-Products.git
-   cd react-users-products
+   cd React-Users-Products
    ```
 
 2. **Install Dependencies**:
