@@ -1,0 +1,132 @@
+.filter-container {
+    margin-bottom: 30px;
+    font-family: 'Neutra Text', sans-serif;
+}
+
+/* Search Section */
+.search-section {
+    background-color: #ebebeb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #322625;
+}
+
+.search-section .filter-group label {
+    color: #322625;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.search-input {
+    width: 80%;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #fdc936;
+    box-shadow: 0 0 8px rgba(253, 201, 54, 0.6);
+    transform: scale(1.02);
+}
+
+/* Filters Section */
+.filters-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ebebeb;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 180px;
+    flex: 1;
+    /* Allow filters to grow evenly */
+}
+
+.filter-group label {
+    font-size: 14px;
+    color: #322625;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+select,
+.filter-input {
+    padding: 10px 12px;
+    border: 1px solid #322625;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    /* Light grey for contrast */
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+select:hover,
+.filter-input:hover {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+select:focus,
+.filter-input:focus {
+    outline: none;
+    border-color: #fdc936;
+    box-shadow: 0 0 6px rgba(253, 201, 54, 0.5);
+    background-color: #fff;
+}
+
+/* Specific Styling for Page Size Select */
+.page-size-select {
+    background-color: #ebebeb;
+    /* Slightly different for distinction */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .filters-section {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .search-section {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .search-input {
+        max-width: 100%;
+    }
+
+    .filter-group {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .search-section,
+    .filters-section {
+        padding: 10px;
+    }
+
+    .filter-group label {
+        font-size: 13px;
+    }
+
+    select,
+    .filter-input {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+}
